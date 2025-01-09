@@ -1,0 +1,28 @@
+.app-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: #161718;
+  color: white;
+  border-bottom: 4px solid #1c1d1e;
+}
+
+.app-header label {
+  font-weight: 100;
+}
+
+.view-switch {
+  margin: 0 !important;
+}
+
+.view-toggle {
+  border-right: 4px solid #1c1d1e;
+  padding-right: 2rem;
+}
+
+.logout-icon {
+  margin: 0;
+  padding: 0;
+}

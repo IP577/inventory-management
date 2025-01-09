@@ -1,0 +1,19 @@
+.inventory-view {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  transition: 1s;
+}
+
+@media (max-width: 1000px) {
+  .stats-section {
+    gap: 1px;
+    transition: 1s;
+  }
+}

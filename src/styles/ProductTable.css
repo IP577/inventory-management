@@ -1,0 +1,15 @@
+.table-main {
+  border-radius: 1rem;
+}
+
+.table-main thead tr th,
+.table-main tbody tr th,
+.table-main tbody tr td {
+  color: white;
+}
+
+.table-container {
+  padding: 1rem 0;
+  background: #161718 !important;
+  box-shadow: none !important;
+}
