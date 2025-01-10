@@ -52,14 +52,10 @@ const CustomDialogBox = (props) => {
     >
       <DialogTitle className="dialogue-title">
         <section className="title-section">
-          <div style={{ fontWeight: 600, fontSize: "1.5rem" }}>
-            Edit Product
-          </div>
-          <div style={{ fontWeight: 500, fontSize: ".8rem" }}>
-            {selectedProduct?.name}
-          </div>
+          <div className="title1">Edit Product</div>
+          <div className="title2">{selectedProduct?.name}</div>
         </section>
-        <IconButton onClick={onClose} style={{ color: "#d9f954" }}>
+        <IconButton onClick={onClose}>
           <CloseIcon />
         </IconButton>
       </DialogTitle>

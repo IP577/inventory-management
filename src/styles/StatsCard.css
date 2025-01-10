@@ -1,29 +1,29 @@
 .stats-card {
-  background-color: #1a1a1a;
-  color: #fff;
-  background-color: #243325;
-  padding: 20px;
-  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: initial;
+  background-color: #243325;
+  color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
   gap: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 20rem;
   height: 5rem;
 }
 
-.stats-card .icon {
-  font-size: 2rem;
+.stats-card svg {
+  align-self: start;
 }
 
-.stats-card .content h3 {
+.stats-card .content h2 {
   margin: 0;
-  font-size: 1.2rem;
+  font-weight: 200;
+  font-size: 0.8rem;
 }
 
 .stats-card .content p {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }

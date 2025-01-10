@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+
 import {
   deleteProduct,
   disableProduct,
   editProduct,
 } from "../features/inventory/inventorySlice";
+import CustomDialogBox from "./CustomDialogBox";
+import "../styles/ProductTable.css";
+
 import {
   Table,
   TableBody,
@@ -19,8 +23,6 @@ import {
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import DeleteIcon from "@mui/icons-material/Delete";
-import CustomDialogBox from "./CustomDialogBox";
-import "../styles/ProductTable.css";
 
 const ProductTable = ({ products, isAdmin }) => {
   const [openDialog, setOpenDialog] = useState(false);

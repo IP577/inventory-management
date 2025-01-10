@@ -1,12 +1,13 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
+
 import { toggleView } from "../features/inventory/inventorySlice";
-import { Switch, FormControlLabel } from "@mui/material";
-import LogoutIcon from "@mui/icons-material/Logout";
 import "../styles/Navbar.css";
 
-const Navbar = () => {
-  const view = useSelector((state) => state.inventory.view);
+import { Switch, FormControlLabel } from "@mui/material";
+import LogoutIcon from "@mui/icons-material/Logout";
+
+const Navbar = ({ isAdmin }) => {
   const dispatch = useDispatch();
 
   const handleViewChange = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
           <FormControlLabel
             control={
               <Switch
-                checked={view !== "admin"}
+                checked={!isAdmin}
                 onChange={handleViewChange}
                 sx={{
                   "& .MuiSwitch-switchBase.Mui-checked": {
@@ -43,10 +44,11 @@ const Navbar = () => {
           />
           <label>user</label>
         </section>
-        <section className="logout-icon">
+        <section>
           <LogoutIcon />
         </section>
       </header>
+      <h1>Inventory stats</h1>
     </nav>
   );
 };

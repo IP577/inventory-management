@@ -1,18 +1,18 @@
 import React from "react";
+import { useSelector } from "react-redux";
+
 import Navbar from "./components/Navbar";
 import InventoryView from "./features/inventory/InventoryView";
-import { useSelector } from "react-redux";
 import "./styles/App.css";
 
 function App() {
-  const view = useSelector((state) => state.inventory.view);
+  const isAdmin = useSelector((state) => state.inventory.view === "admin");
 
   return (
-    <div>
-      <Navbar />
-      <h1>Inventory stats</h1>
-      <InventoryView isAdmin={view === "admin"} />
-    </div>
+    <>
+      <Navbar isAdmin={isAdmin} />
+      <InventoryView isAdmin={isAdmin} />
+    </>
   );
 }
 

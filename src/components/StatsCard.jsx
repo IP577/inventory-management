@@ -4,27 +4,10 @@ import "../styles/StatsCard.css";
 const StatsCard = ({ title, value, Icon }) => {
   return (
     <div className="stats-card">
-      <div className="icon">
-        <Icon fontSize="large" />
-      </div>
+      <Icon fontSize="large" />
       <div className="content">
-        <h3
-          style={{
-            fontWeight: 200,
-            fontSize: ".8rem",
-          }}
-        >
-          {title}
-        </h3>
-        <p
-          style={{
-            fontWeight: 800,
-            fontSize: "2rem",
-            marginTop: ".5rem",
-          }}
-        >
-          {value}
-        </p>
+        <h2>{title}</h2>
+        <p>{value}</p>
       </div>
     </div>
   );
